@@ -1,0 +1,90 @@
+<%- include("partials/_header") %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card bg-dark">
+      <div class="card-body">
+        <form action="/update/<%= customer.id %>" method="POST">
+          <input
+            type="text"
+            name="rut"
+            value="<%= customer.rut %>"
+            placeholder="rut"
+            class="form-control mb-3"
+            autofocus
+          />
+          <input
+            type="text"
+            name="name"
+            value="<%= customer.name %>"
+            placeholder="nombres"
+            class="form-control mb-3"
+            autofocus
+          />
+          <input
+          type="text"
+          name="ap_paterno"
+          value="<%= customer.ap_paterno %>"
+          placeholder="paterno"
+          class="form-control mb-3"
+          autofocus
+        />
+        <input
+        type="text"
+        name="ap_materno"
+        value="<%= customer.ap_materno %>"
+        placeholder="materno"
+        class="form-control mb-3"
+        autofocus
+      />
+      <input
+            type="text"
+            name="direccion"
+            value="<%= customer.direccion%>"
+            placeholder="direccion"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="address"
+            value="<%= customer.address%>"
+            placeholder="Correo"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="contrasenia"
+            value="<%= customer.contrasenia%>"
+            placeholder="contraseña"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="phone"
+            value="<%= customer.phone%>"
+            placeholder="Phone"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="blocked"
+            value="<%= customer.blocked%>"
+            placeholder="bloqueo"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="typeAccount"
+            value="<%= customer.typeAccount%>"
+            placeholder="web/movil"
+            class="form-control mb-3"
+          />
+
+          <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/_footer") %>

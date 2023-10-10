@@ -1,0 +1,21 @@
+body {
+  background-color: #0074D9; /* Fondo azul */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: yellow; /* Letras amarillas */
+}
+
+.navbar-brand {
+  color: yellow !important;
+}
+
+
+
+input {
+  border-radius: 10px!important;
+}
+
+.card-body{
+  border-radius: 10px!important;
+
+}
